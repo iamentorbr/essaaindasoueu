@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fotos &amp; Vídeos · Meu Blog</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">✍️ Meu Blog</a>
+        <nav class="main-nav">
+          <a href="index.html">Início</a>
+          <a href="midia.html" class="active">Fotos &amp; Vídeos</a>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="media-header">
+      <h1>Fotos &amp; Vídeos</h1>
+      <div class="media-filters">
+        <button class="filter-btn active" data-filter="all">Tudo</button>
+        <button class="filter-btn" data-filter="photo">Fotos</button>
+        <button class="filter-btn" data-filter="video">Vídeos</button>
+      </div>
+      <div class="timeline-view-toggle">
+        <button class="view-btn active" data-view="day"><i class="fas fa-calendar-day"></i> Por dia</button>
+        <button class="view-btn" data-view="week"><i class="fas fa-calendar-week"></i> Por semana</button>
+      </div>
+    </div>
+
+    <div class="timeline" id="timeline">
+      <!-- Timeline rendered by JS -->
+    </div>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close"><i class="fas fa-times"></i></button>
+    <button class="lightbox-prev" id="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+    <div class="lightbox-content" id="lightbox-content"></div>
+    <button class="lightbox-next" id="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+    <p class="lightbox-caption" id="lightbox-caption"></p>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Meu Blog · Feito com ❤️</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/midia.js"></script>
+</body>
+</html>
